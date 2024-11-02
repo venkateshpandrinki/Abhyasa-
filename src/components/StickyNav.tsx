@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
-import Logo from "@/app/fonts/logo";
+import Navbar from "./Navbar";
 const StickyNav = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -21,14 +21,15 @@ const StickyNav = () => {
         <nav 
             className={`
                 fixed top-0 left-0 w-full 
-                transition-transform duration-300 ease-in-out
+                transition-transform duration-300 ease-in-out z-40
+                 
                 ${isVisible ? 'translate-y-0' : '-translate-y-full'}
-                bg-white bg-opacity-90 shadow-md z-50
+               
             `}
         >
-            <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-                <Logo/>
-                
+            <div className="  bg-gradient-to-br from-black via-gray-900 to-gray-800 pointer-events-auto">
+
+            <Navbar/>
             </div>
         </nav>
     )

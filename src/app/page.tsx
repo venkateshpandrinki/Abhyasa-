@@ -1,31 +1,119 @@
-import { Courses } from "@/components/component/courses";
-import Footer from "@/components/Footer";
-import { Hero } from "@/components/Hero";
-import Mainsection from "@/components/Mainsection";
-import { MarqueeDemo } from "@/components/MarqueeDemo";
+"use client";
+import { useState, useEffect } from "react";
+import Head from "next/head";
+import FloatingNav from "@/components/FloatingNav";
+import { Mail, Phone } from "lucide-react";
+import {
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
+import { Separator } from "@/components/ui/separator";
+import Heroslide from "@/components/Heroslide";
 
-import Navbar from "@/components/Navbar";
+import Logowithshapes from "@/components/Logowithshapes";
 import ScrollingBanner from "@/components/ScrollingBanner";
-
-
+import { Courses } from "@/components/courses";
+import { Placements } from "@/components/Placements";
+import Features from "@/components/Features";
+import Enrollment from "@/components/Enrollment";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { useRef } from "react";
+const images = ["/images/bgimg.jpg", "/images/processor-8785387_1920.jpg"];
 
 export default function Home() {
-  return (
-    <div className=" bg-background dark:bg-background">
-     
-     
+  const enrollmentRef = useRef<HTMLDivElement | null>(null); // Define the type for the ref
 
-   <Navbar/>
-   
-   {/* <Hero /> */}
-   <Mainsection/>
-   <ScrollingBanner/>
-   <Courses/>
-   <Footer/>  
-   
-    
-    
+  const scrollToEnrollment = () => {
+    enrollmentRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [key, setKey] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setKey((prevKey) => prevKey + 1); // This will force the animation to restart
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className=" scroll-smooth  bg-gradient-to-br from-black via-gray-900 to-gray-800">
+      {/* /contactdetails */}
+      <div className="w-[850px] absolute hidden lg:flex items-center justify-end  space-x-4  h-20  font-semibold right-40 z-10 px-10">
+        <div className=" flex  cursor-pointer  p-2">
+          <Phone />
+          +91 9438062982
+        </div>
+
+        <Separator className=" bg-slate-400 h-8" orientation="vertical" />
+        <div className=" flex gap-2  p-2">
+          <Mail />
+
+          <address>
+            <a href="mailto:abhyasasemitech@gmail.com">
+              abhyasasemitech@gmail.com
+            </a>
+          </address>
+        </div>
+        <Separator className=" bg-slate-400 h-8" orientation="vertical" />
+        <div className=" cursor-pointer flex space-x-4">
+          <LinkedInLogoIcon />
+
+          <InstagramLogoIcon />
+          <TwitterLogoIcon />
+        </div>
+      </div>
+      <div className=" absolute ">
+        <Logowithshapes />
+      </div>
+      <FloatingNav />
+      <div className=" lg:hidden ">
+
+      <Navbar/>
+      </div>
+      
+
+      <div className="relative   w-full h-[500px]  lg:h-[calc(100vh-60px)] overflow-hidden">
+        <Head>
+          <title>Image Carousel</title>
+          <link rel="icon" href="" />
+        </Head>
+
+        {images.map((image, index) => (
+          <div
+            key={`${image}-${key}`}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div
+              className="w-full h-full bg-cover bg-center animate-slowzoom opacity-40"
+              style={{ backgroundImage: `url(${image})` }}
+            />
+          </div>
+        ))}
+
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <Heroslide scrollToEnrollment={scrollToEnrollment} />
+        </div>
+      </div>
+      <ScrollingBanner />
+      <Features />
+      <Courses />
+
+      <Placements />
+      <div ref={enrollmentRef}>
+
+      <Enrollment />
+      </div>
+      
     </div>
-   
   );
 }

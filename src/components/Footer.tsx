@@ -7,16 +7,25 @@ import {
 
 import { Mail, Phone, MapPinned } from "lucide-react";
 import Link from "next/link";
+import TestimonialCarousel from "./testimonails";
+import { Separator } from "./ui/separator";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12 px-6 text-sm">
-      <div className="max-w-6xl mx-auto">
+    <footer className="bg-gray-900 text-white pt-12 pb-4 px-6 text-sm">
+      <div className="max-w-8xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-0">
+
             <div className="flex items-center ">
-              <Logo />{" "}
-              <span className=" text-3xl font-serif font-medium">
+            <Image
+          src={"/images/smallLogo.png"}
+          alt="logo"
+          width={60}
+          height={60}
+          />
+              <span className=" text-3xl font-serif text-red-500 font-medium">
                 {" "}
                 Abhyasa{" "}
               </span>
@@ -25,8 +34,12 @@ export default function Footer() {
               Mastering VLSI Design for a Smarter Tomorrow
             </p>
           </div>
+          <TestimonialCarousel/>
+          
+
+
           <div className="  flex flex-col md:flex-row  gap-10   justify-center items-start  ">
-            <div className=" lg:pl-8 ">
+            <div className=" pt-4 md:pt-0 lg:pl-8 ">
               <h3 className="text-sm font-semibold mb-4">Contact Us</h3>
               <ul className="space-y-2   text-center">
                 <li className=" flex cursor-pointer items-center gap-2">
@@ -61,22 +74,25 @@ export default function Footer() {
         </div>
         {/* bottom section */}
         <div className=" mt-12 flex items-center   md:flex-row md:pl-4 justify-between  ">
-            <div className="flex flex-col md:flex-row gap-4 text-gray-300  ">
-            <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <div className="flex  gap-4 text-gray-300  ">
+            <Link href="https://www.linkedin.com/in/abhyasasemitech24/" target="_blank" rel="noopener noreferrer">
               <LinkedInLogoIcon className="hover:text-white transition-colors h-5 w-5"    />
             </Link>
-            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/abhyasa_semitech/" target="_blank" rel="noopener noreferrer">
               <InstagramLogoIcon className="hover:text-white transition-colors h-5 w-5 " />
             </Link>
-            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://x.com/abhyasasemitech" target="_blank" rel="noopener noreferrer">
               <TwitterLogoIcon className="hover:text-white transition-colors h-5 w-5" />
             </Link>
             </div>
-          <span className=" text-center md:text-right text-gray-400 text-sm lg:pr-8">
-            Copyright © 2024 Abhyasa Semicon Technologies.
-          </span>
+          
         </div>
+        <div className=" text-center   text-gray-400 text-sm lg:pr-8  mt-3 ">
+          <Separator/>
+           <p className=" mt-3"> Copyright © 2024 Abhyasa Semicon Technologies.</p>
+          </div>
       </div>
     </footer>
   );
 }
+

@@ -1,88 +1,65 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Cpu, Book, Users, Award } from "lucide-react"
-import Image from "next/image"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Layers, Target, Eye } from "lucide-react"
 import Navbar from "./Navbar"
 
-export default function About() {
+export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white pb-8 px-8">
      <Navbar />
+      <div className="max-w-4xl mx-auto mt-3">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-center my-2">ABOUT US</h1>
 
-      <main className="container mx-auto px-4 py-8">
-        <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">About Abhyasa</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Empowering the next generation of VLSI engineers with cutting-edge courses and hands-on experience.
-          </p>
-        </section>
+        <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg mb-8">
+          <CardHeader>
+            <CardTitle className="text-2xl font-semibold text-white">Who are 'ABHYASA'?</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-300">
+              The name ABHYASA infers practice, to achieve a quiet consistency and dedication: to see change, you need regular abhyasa (practice). ABHYASA is a VLSI Design Training mainly focused on giving complete knowledge and hands-on experience in VLSI design flow with industry-oriented tools. Our team has an Industry presence of over 10 years. It is extensive training for students in the field of electrical and electronics. By the end of the course, students will learn to work in a Linux environment and understand the complete VLSI design flow. ABHYASA was established to supply the VLSI industries with more expertise and fresh talent pools.
+            </p>
+          </CardContent>
+        </Card>
 
-        <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-4">Our Mission</h2>
-          <p className="text-lg text-muted-foreground">
-            At Abhyasa, we are committed to bridging the gap between theoretical knowledge and practical application in the field of VLSI design. Our mission is to provide high-quality, industry-relevant courses that equip students and professionals with the skills needed to excel in the rapidly evolving world of integrated circuit design.
-          </p>
-        </section>
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold text-white">
+                <Target className="mr-2" />
+                Mission
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">
+                Abhyasa is committed to materialize its vision through its extensive training programs, seminars, internships, and workshops. Abhyasa is dedicated to realizing its mission and exposing graduates and undergraduates to the industry.
+              </p>
+            </CardContent>
+          </Card>
 
-        <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8">Why Choose Abhyasa?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: Book, title: "Comprehensive Curriculum", description: "Covers all aspects of VLSI design from basics to advanced topics" },
-              { icon: Users, title: "Expert Instructors", description: "Learn from industry professionals with years of experience" },
-              { icon: Cpu, title: "Hands-on Projects", description: "Apply your knowledge with real-world VLSI design projects" },
-              { icon: Award, title: "Industry Recognition", description: "Our courses are recognized and valued by top tech companies" }
-            ].map((feature, index) => (
-              <Card key={index}>
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <feature.icon className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8">Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { name: "Name 1", role: "Founder & Lead Instructor" },
-              { name: "Name 2", role: "VLSI Design Expert" },
-              { name: "Name 3", role: "Course Development Manager" }
-            ].map((member, index) => (
-              <div key={index} className="text-center">
-                <Image
-                  src={`/placeholder.svg?height=200&width=200`}
-                  alt={member.name}
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-muted-foreground">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="text-center bg-muted p-8 rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Ready to Start Your VLSI Journey?</h2>
-          <p className="text-lg text-muted-foreground mb-6">
-            Explore our courses and take the first step towards becoming a VLSI design expert.
-          </p>
-          <Button size="lg">
-            View Our Courses
-          </Button>
-        </section>
-      </main>
-
-      <footer className="bg-primary text-primary-foreground py-8 mt-16">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2024 Abhyasa VLSI Courses. All rights reserved.</p>
+          <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold text-white">
+                <Eye className="mr-2" />
+                Vision
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">
+                The goal of Abhyasa is to serve as an intellectual bridge connecting highly developed, idealistic industries with a wealth of talented universities. Abhyasa wants to establish a point of contact for VLSI training through research and development, industry-focused education programs, and technological contributions.
+              </p>
+            </CardContent>
+          </Card>
         </div>
-      </footer>
+
+        <div className="mt-12 text-center">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center text-white shadow-sm">
+            <Layers className="mr-2" />
+            Our Expertise
+          </h2>
+          <p className="text-gray-300">
+            With over a decade of industry presence, ABHYASA brings you comprehensive VLSI Design Training that bridges the gap between academia and industry requirements.
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

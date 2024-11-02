@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 import { Inter,Hedvig_Letters_Serif } from 'next/font/google'
 import { GeistSans } from 'geist/font/sans';
+import StickyNav from "@/components/StickyNav";
+import Footer from "@/components/Footer";
  
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +27,7 @@ export default function RootLayout({
       <body
         className={`antialiased h-dvh ${GeistSans.className}`}
       >
+        <StickyNav/>
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -33,6 +36,7 @@ export default function RootLayout({
           >
             {children}
           </ThemeProvider>
+          <Footer/>
       </body>
     </html>
   );

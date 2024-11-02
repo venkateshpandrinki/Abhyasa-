@@ -13,8 +13,11 @@ const fadeInUpAnimation: Variants = {
     },
   },
 };
+type HeroSlideProps = {
+  scrollToEnrollment: () => void;
+};
 
-const Heroslide = () => {
+const Heroslide = ({ scrollToEnrollment }: HeroSlideProps) => {
   return (
     <motion.div initial="hidden" animate="show" variants={fadeInUpAnimation}
     className="  flex flex-col justify-center items-center text-center lg:mt-8 gap-4"
@@ -38,7 +41,7 @@ const Heroslide = () => {
         Designed & Delivered by Industry Experts
       </motion.p>
       <motion.div variants={fadeInUpAnimation}>
-        <Button className=" bg-green-500 hover:bg-green-600">Enroll Now</Button>
+        <Button className=" bg-green-500 hover:bg-green-600" onClick={scrollToEnrollment}>Enroll Now</Button>
       </motion.div>
     </motion.div>
   );

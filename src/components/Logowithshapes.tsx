@@ -3,13 +3,13 @@ export default function Logowithshapes() {
     <div className="relative hidden  lg:flex items-center justify-center flex-wrap max-w-[278px]  h-[170px] z-50">
       {/* The logo image */}
       <img
-        src='https://www.abhyasa.org.in/images/abhyasa_logo.jpg'
+        src='/images/logo-removebg-preview.png'
         alt="Logo"
-        className="relative z-10 max-h-[175px]  ml-6 h-36 rounded-full  mt-[-15px]"
+        className="relative z-10 max-h-[175px]  ml-6 h-36   mt-[-15px]"
       />
 
       {/* White shape (equivalent to ::before) */}
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           bottom: 0,
@@ -22,10 +22,10 @@ export default function Logowithshapes() {
           
           
         }}
-      ></div>
+      ></div> */}
 
       {/* Green gradient shape (equivalent to ::after) */}
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           bottom: '-20px',
@@ -36,7 +36,7 @@ export default function Logowithshapes() {
           borderRadius: '70% 70% 65% 70%',
           backgroundImage: 'linear-gradient(to right, #32cd32, #008000)', // LimeGreen to Green
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 }
