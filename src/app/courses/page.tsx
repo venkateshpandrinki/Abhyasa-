@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Mail, Phone } from 'lucide-react'
+import Link from 'next/link'
 
 const page = () => {
   const faqs = [
@@ -45,12 +46,16 @@ const page = () => {
             <CardContent className="space-y-4">
               <p className="text-gray-300">Our team is here to help you choose the right course and answer any questions you may have.</p>
               <div className="space-y-2">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Link href={"/contact"}>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white mb-3">
                   <Mail className="mr-2 h-4 w-4" /> Contact Us
                 </Button>
+                </Link>
+                <Link href={"/contact"}>
                 <Button variant="outline" className="w-full text-blue-400 hover:text-blue-300 border-blue-600 hover:bg-blue-900/20">
                   <Phone className="mr-2 h-4 w-4" /> Schedule a Call
                 </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>

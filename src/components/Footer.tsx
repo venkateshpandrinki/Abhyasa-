@@ -1,4 +1,3 @@
-import Logo from "@/app/fonts/logo";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,

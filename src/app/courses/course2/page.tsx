@@ -33,7 +33,7 @@ export default function Component() {
             <TabsContent value="overview" className="mt-4 text-gray-300">
               <h3 className="text-xl font-semibold mb-2">About The Course</h3>
               <p className="mb-6">
-                The curriculum begins with VLSI fundamentals and an understanding of Moore's Law, then moves into topics such as RTL coding, synthesis, low-power design, and verification using SystemVerilog and UVM, with a focus on coverage-driven, formal, and assertion-based methodologies. With strong emphasis on Linux fundamentals and practical sessions, this course prepares students for real-world automation in the design flow, enabling hands-on experience with modern, industry-relevant semiconductor solutions.
+                The curriculum begins with VLSI fundamentals and an understanding of Moore s Law, then moves into topics such as RTL coding, synthesis, low-power design, and verification using SystemVerilog and UVM, with a focus on coverage-driven, formal, and assertion-based methodologies. With strong emphasis on Linux fundamentals and practical sessions, this course prepares students for real-world automation in the design flow, enabling hands-on experience with modern, industry-relevant semiconductor solutions.
               </p>
               <h3 className="text-xl font-semibold mb-4">Training Outcomes</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">

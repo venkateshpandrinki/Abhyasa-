@@ -1,12 +1,11 @@
 import { FC } from "react";
 import Image from "next/image";
 
-interface FeaturesProps {}
 
-const Features: FC<FeaturesProps> = ({}) => {
+const Features: FC = ({}) => {
   return (
     <div className=" mt-3 ">
-            <h2 className=" text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-10 text-white mb-12"> What We Offer</h2>
+            <h2 className=" text-4xl sm:text-5xl lg:text-6xl font-bold text-center  text-white mb-12"> What We Offer</h2>
       <div className=" flex flex-col md:flex-row  w-full  justify-evenly">
         
           <div className=" wrapper h-[516px]  flex  flex-col items-center text-center">

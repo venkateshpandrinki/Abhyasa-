@@ -17,9 +17,10 @@ import { Courses } from "@/components/courses";
 import { Placements } from "@/components/Placements";
 import Features from "@/components/Features";
 import Enrollment from "@/components/Enrollment";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { useRef } from "react";
+import Link from "next/link";
+import Blog from "@/components/Blog";
 const images = ["/images/bgimg.jpg", "/images/processor-8785387_1920.jpg"];
 
 export default function Home() {
@@ -57,17 +58,22 @@ export default function Home() {
           <Mail />
 
           <address>
-            <a href="mailto:abhyasasemitech@gmail.com">
-              abhyasasemitech@gmail.com
+            <a href="mailto:hr@abhyasa.org.in">
+            hr@abhyasa.org.in
             </a>
           </address>
         </div>
         <Separator className=" bg-slate-400 h-8" orientation="vertical" />
         <div className=" cursor-pointer flex space-x-4">
+          <Link href={"https://www.linkedin.com/in/abhyasasemitech24/"} target="_blank">
           <LinkedInLogoIcon />
-
+          </Link>
+          <Link href={"https://www.instagram.com/abhyasa_semitech/"} target="_blank">
           <InstagramLogoIcon />
+          </Link>
+          <Link href={"https://x.com/abhyasasemitech"} target="_blank">
           <TwitterLogoIcon />
+          </Link>
         </div>
       </div>
       <div className=" absolute ">
@@ -113,6 +119,7 @@ export default function Home() {
 
       <Enrollment />
       </div>
+      <Blog/>
       
     </div>
   );

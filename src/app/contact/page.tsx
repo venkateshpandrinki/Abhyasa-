@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
-import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, TwitterIcon } from "lucide-react"
+import {  Instagram, Linkedin,  Phone, Mail, TwitterIcon } from "lucide-react"
 import Navbar from "@/components/Navbar"
 
 export default function page() {

@@ -11,7 +11,7 @@ export default function AboutUs() {
 
         <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg mb-8">
           <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-white">Who are 'ABHYASA'?</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-white">Who are &lsquo;ABHYASA&rsquo;?</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-gray-300">

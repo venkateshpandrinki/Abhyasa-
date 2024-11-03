@@ -3,14 +3,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 
-import { Inter,Hedvig_Letters_Serif } from 'next/font/google'
 import { GeistSans } from 'geist/font/sans';
 import StickyNav from "@/components/StickyNav";
 import Footer from "@/components/Footer";
  
-const inter = Inter({ subsets: ['latin'] })
-
-
 
 export const metadata: Metadata = {
   title: "Abhyasa",

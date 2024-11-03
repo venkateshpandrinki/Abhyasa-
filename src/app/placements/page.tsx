@@ -1,7 +1,5 @@
-import { Placements } from "@/components/Placements"
-import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { ChevronRight, Info } from "lucide-react"
+import {  Info } from "lucide-react"
 
 import Marquee from "@/components/ui/marquee";
 import Image from "next/image";
