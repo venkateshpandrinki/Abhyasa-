@@ -21,7 +21,7 @@ export default function BlogPostPage() {
   }
 
   return (
-    <div className=" bg-gradient-to-br from-black via-gray-900 to-gray-800">
+    <div className=" bg-gradient-to-br from-black via-gray-900 to-gray-800 text-justify">
     <Navbar/>
     <div className="min-h-screen text-white flex items-center justify-center p-4">
       <Card className="w-full max-w-4xl bg-gray-800 bg-opacity-50 border-none">

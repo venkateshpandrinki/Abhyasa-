@@ -41,7 +41,7 @@ const Heroslide = ({ scrollToEnrollment }: HeroSlideProps) => {
         Designed & Delivered by Industry Experts
       </motion.p>
       <motion.div variants={fadeInUpAnimation}>
-        <Button className=" bg-green-500 hover:bg-green-600" onClick={scrollToEnrollment}>Enroll Now</Button>
+        <Button className=" bg-blue-600 hover:bg-blue-700" onClick={scrollToEnrollment}>Enroll Now</Button>
       </motion.div>
     </motion.div>
   );

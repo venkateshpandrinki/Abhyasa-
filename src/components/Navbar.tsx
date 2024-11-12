@@ -16,16 +16,17 @@ const Navbar = () => {
   return (
     <div className={`${GeistSans.className} w-full`}>
       <header className="flex h-16 w-full shrink-0 items-center px-4 md:px-6">
-        <Link href="/">
+        <Link href="/" className="  my-2">
           <Image
           src={"/images/smallLogo.png"}
           alt="logo"
-          width={60}
-          height={60}
+          width={70}
+          height={70}
           />
         </Link>
-        <Link href="/">
-          <p className="font-serif text-4xl text-red-500">Abhyasa</p>
+        <Link href="/" className="  text-center">
+          <p className="font-serif text-4xl  text-red-500 tracking-wide">ABHYASA</p>
+          <p className=" text-[14px]  font-medium text-blue-500">SEMICON TECHNOLOGIES</p>
         </Link>
 
         <nav className="ml-auto hidden lg:flex gap-8">

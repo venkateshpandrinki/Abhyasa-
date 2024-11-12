@@ -11,7 +11,7 @@ const ScrollingBanner = () => {
             Don't miss our free UTB session on Part-2: ASIC Physical Design and
             Verification (Netlist-to-GDSII) of a Mod-N(Mod-10) Counter - Recorded
             Session Streaming on December 11, 2024! -
-            <Button className="ml-4 bg-blue-500" onClick={() => {
+            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" onClick={() => {
               window.open('https://abhyasa.graphy.com/courses', "_blank")
             }}>Register Now</Button>
           </span>

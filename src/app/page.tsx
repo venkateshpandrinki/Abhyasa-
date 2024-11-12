@@ -21,7 +21,8 @@ import Navbar from "@/components/Navbar";
 import { useRef } from "react";
 import Link from "next/link";
 import Blog from "@/components/Blog";
-const images = ["/images/bgimg.jpg", "/images/processor-8785387_1920.jpg"];
+// const images = ["https://media.licdn.com/dms/image/v2/D5612AQH8MT2TEr39zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1679751126970?e=1736380800&v=beta&t=SK2GrZN0wUy7vXnShVgRVSsFXDQ1JS0uRUc21jDlJF4","https://pinetrainingacademy.in/wp-content/uploads/2023/07/Untitled-design-18-e1690568162755.jpg","https://openroaddesigncontest.org/wp-content/uploads/2023/02/99.jpg"];
+const images = ['/images/b1.jpg','/images/b2.jpg','/images/b3.jpg'];
 
 export default function Home() {
   const enrollmentRef = useRef<HTMLDivElement | null>(null); // Define the type for the ref

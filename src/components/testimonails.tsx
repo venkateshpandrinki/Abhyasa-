@@ -19,7 +19,7 @@ const TestimonialCarousel = () => {
 
   return (
     <div className=' flex justify-center items-center flex-col border border-zinc-500 rounded-3xl  pt-4'>
-        <h1 className=' text-white text-xl'> Testimonial</h1>
+        <h1 className=' text-white text-xl'> Testimonials</h1>
     <div className="w-[250px] h-[170px] relative overflow-hidden rounded-lg">
       {testimonials.map((testimonial, index) => (
         <div

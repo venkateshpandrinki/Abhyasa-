@@ -1,12 +1,26 @@
+import Image from 'next/image';
+import Link from 'next/link';
 export default function Logowithshapes() {
   return (
     <div className="relative hidden  lg:flex items-center justify-center flex-wrap max-w-[278px]  h-[170px] z-50">
       {/* The logo image */}
-      <img
+      {/* <img
         src='/images/logo-removebg-preview.png'
         alt="Logo"
         className="relative z-10 max-h-[175px]  ml-6 h-36   mt-[-15px]"
-      />
+      /> */}
+       <Link href="/" className="  my-2">
+          <Image
+          src={"/images/smallLogo.png"}
+          alt="logo"
+          width={90}
+          height={90}
+          />
+        </Link>
+        <Link href="/" className="  text-center">
+          <p className="font-serif text-4xl  text-red-500 tracking-wide">ABHYASA</p>
+          <p className=" text-[14px]  font-medium text-blue-500">SEMICON TECHNOLOGIES</p>
+        </Link>
 
       {/* White shape (equivalent to ::before) */}
       {/* <div

@@ -123,7 +123,7 @@ export default function Enrollment() {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyn4aFvIbAQDvy8LAHZ74SnDXlB9ZmA38s1vRGfKkpFohtpCtR_-szPHe8pnHI_IiBt/exec",
+        "https://script.google.com/macros/s/AKfycbyxwz5y7v1sVCunZ5Cf2na0QPVGWjWuwT--llAM4Vpgj4sFhJF4_x5OVTFFUJ61ne2WEQ/exec",
         {
           method: "POST",
           headers: { "Content-Type": "text/plain;charset=utf-8" },
@@ -185,7 +185,7 @@ export default function Enrollment() {
             <Input id="passedOut"  type="number" placeholder="Enter year" min="1900" max="2099" step="1" className="bg-white/20 text-white placeholder:text-gray-400" {...register("passedOut", { valueAsNumber: true })} />
             {errors.passedOut && <p className="text-red-500 text-sm">{String(errors.passedOut.message)}</p>}
           </div>
-          <Button type="submit" className="w-full bg-blue-500 text-white hover:bg-blue-600">Submit</Button>
+          <Button type="submit" className="w-full bg-blue-600 text-white hover:bg-blue-700">Submit</Button>
         </form>
         {formStatus && <p className="text-white text-center mt-4">{formStatus}</p>}
       </div>

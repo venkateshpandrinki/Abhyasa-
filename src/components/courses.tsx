@@ -14,16 +14,16 @@ export function Courses() {
       image: "/images/vlsipd.webp",
       modules: 3,
       language: "English",
-      access: "Access till 2025-07-18",
+      access: "365 Days",
       url: "https://abhyasa.graphy.com/courses/VLSI--Physical-Design--66e40e7870e1ab34d9f9933d-66e40e7870e1ab34d9f9933d",
       url2: "/courses/course1"
     },
     {
       title: "VLSI Design Verification",
       image: "/images/vlsidv.webp",
-      modules: 2,
+      modules: 3,
       language: "English",
-      access: "LifeTime",
+      access: "365 Days",
       url: "https://abhyasa.graphy.com/courses/VLSI--Design--Verification--66e2b24053750d2d5bf2d01d-66e2b24053750d2d5bf2d01d",
       url2: "/courses/course2"
     },
@@ -66,7 +66,7 @@ export function Courses() {
           </CardContent>
           <CardFooter className="flex justify-between border-t border-gray-700 pt-4">
             <Button 
-              className="bg-blue-500 hover:bg-blue-600 text-white"
+              className="bg-blue-600 hover:bg-blue-700 text-white"
               onClick={() => window.open(course.url, "_blank")}
             >
               Enroll Now

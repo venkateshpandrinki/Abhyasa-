@@ -3,7 +3,7 @@ import React from 'react'
 
 const FloatingNav = () => {
   return (
-    <div className='h-20 w-[850px] bg-teal-700 bg-opacity-100 font-bold text-base top-20 right-40 absolute z-10 rounded-full hidden lg:flex justify-evenly items-center text-foreground dark:text-foreground'>
+    <div className='h-20 w-[850px] bg-blue-600  bg-opacity-100 font-bold text-xl top-20 right-40 absolute z-10 rounded-full hidden lg:flex justify-evenly items-center text-foreground dark:text-white'>
       {/* Home Link */}
       <div className='relative group '>
         <Link href='/' className='  inline-block mb-1' >

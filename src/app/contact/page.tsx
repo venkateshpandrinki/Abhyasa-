@@ -36,7 +36,7 @@ export default function Page() {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbz9HUuD9tuFoxV_mjTu5GGwHiRbWnbuK7doFMJgAP4Aqljlux07koViSHbi8pnHAMo/exec",
+        "https://script.google.com/macros/s/AKfycbx0HV-pVV-u6fDNs0sWV6DoasFeRYzOxglymUhBpDvsHUDFWLqR3r4UmtqoFVMNyq-nmw/exec",
         {
           method: "POST",
           headers: { "Content-Type": "text/plain;charset=utf-8" },

@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white pb-8 px-8">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white pb-8 px-8 text-justify">
      <Navbar />
       <div className="max-w-4xl mx-auto mt-3">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-center my-2">ABOUT US</h1>
