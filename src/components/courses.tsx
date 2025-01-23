@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Book, Globe, Clock, ChevronRight } from 'lucide-react'
+import ExportedImage from "next-image-export-optimizer"
 import { useRouter } from 'next/navigation'
 
 export function Courses() {
@@ -11,7 +12,7 @@ export function Courses() {
   const courses = [
     {
       title: "VLSI Physical Design",
-      image: "/images/vlsipd.webp",
+      image: "/images/ft/c1.jpg",
       modules: 3,
       language: "English",
       access: "365 Days",
@@ -20,7 +21,7 @@ export function Courses() {
     },
     {
       title: "VLSI Design Verification",
-      image: "/images/vlsidv.webp",
+      image: "/images/ft/c2.jpg",
       modules: 3,
       language: "English",
       access: "365 Days",
@@ -37,7 +38,7 @@ export function Courses() {
     <div className="flex flex-wrap gap-8 justify-center max-w-7xl mx-auto">
       {courses.map((course, index) => (
         <Card key={index} className="w-full sm:w-[48%] lg:w-[30%] bg-gray-800 border-gray-700 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(30,58,138,0.6)]">
-          <img
+          <ExportedImage
             src={course.image}
             alt={`${course.title} cover`}
             width={600}

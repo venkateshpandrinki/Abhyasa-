@@ -19,8 +19,9 @@ type HeroSlideProps = {
 
 const Heroslide = ({ scrollToEnrollment }: HeroSlideProps) => {
   return (
+    <>
     <motion.div initial="hidden" animate="show" variants={fadeInUpAnimation}
-    className="  flex flex-col justify-center items-center text-center lg:mt-8 gap-4"
+    className="hidden  md:flex flex-col justify-center items-center text-center lg:mt-8 gap-4"
     >
       <motion.h1 variants={fadeInUpAnimation} className={` ${hedvig.className} font-black leading-10   
       text-4xl 
@@ -44,6 +45,33 @@ const Heroslide = ({ scrollToEnrollment }: HeroSlideProps) => {
         <Button className=" bg-blue-600 hover:bg-blue-700" onClick={scrollToEnrollment}>Enroll Now</Button>
       </motion.div>
     </motion.div>
+   
+    <div 
+    className=" md:hidden flex flex-col justify-center items-center text-center lg:mt-8 gap-4"
+    >
+      <h1 className={` ${hedvig.className} font-black leading-10   
+      text-4xl 
+      sm:leading-none md:text-[5rem]  tracking-normal md:tracking-wide
+    text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400
+      `}>
+        Start Your VLSI career
+        <br />
+        with Excellent Placement
+      </h1>
+     
+
+
+      <p 
+      className=" text-lg font-bold md:text-3xl"
+      >
+        {" "}
+        Designed & Delivered by Industry Experts
+      </p>
+      <div >
+        <Button className=" bg-blue-600 hover:bg-blue-700" onClick={scrollToEnrollment}>Enroll Now</Button>
+      </div>
+    </div>
+    </>
   );
 };
 

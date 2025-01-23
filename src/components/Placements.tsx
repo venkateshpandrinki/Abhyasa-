@@ -1,3 +1,4 @@
+import ExportedImage from "next-image-export-optimizer";
 
 import Marquee from "@/components/ui/marquee";
 
@@ -38,7 +39,7 @@ export function Placements() {
           className="sm:h-20 md:h-24 justify-center overflow-hidden [--duration:30s] [--gap:1rem]"
         >
           {logos.map((data, idx) => (
-            <img
+            <ExportedImage
               key={idx}
               src={data.image}
               alt={data.alt}
@@ -53,7 +54,7 @@ export function Placements() {
           className=" sm:h-20 md:h-24 justify-center overflow-hidden [--duration:30s] [--gap:1rem]"
         >
           {logos.map((data, idx) => (
-            <img
+            <ExportedImage
               key={idx}
               src={data.image}
               alt={data.alt}

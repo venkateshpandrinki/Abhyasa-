@@ -1,6 +1,8 @@
 'use client'
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+
 
 const ScrollingBanner = () => {
   return (
@@ -8,20 +10,16 @@ const ScrollingBanner = () => {
       <div className="scrolling-container">
         <div className="scrolling-content">
           <span className="inline-flex items-center text-xl">
-            Don't miss our free UTB session on Part-2: ASIC Physical Design and
-            Verification (Netlist-to-GDSII) of a Mod-N(Mod-10) Counter - Recorded
-            Session Streaming on December 11, 2024! -
-            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" onClick={() => {
-              window.open('https://abhyasa.graphy.com/courses', "_blank")
-            }}>Register Now</Button>
+          Exciting Opportunity: Step into our Hands-On Physical Design Projects – Build VLSI Expertise and Shape the Future of Tech!
+          <Link href={'/projects/physical-design'}>
+            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" >PD Projects</Button>
+            </Link>
           </span>
           <span className="inline-flex items-center text-xl ml-20">
-            Don't miss our free UTB session on Part-2: ASIC Physical Design and
-            Verification (Netlist-to-GDSII) of a Mod-N(Mod-10) Counter - Recorded
-            Session Streaming on December 11, 2024! -
-            <Button className="ml-4 bg-blue-500" onClick={() => {
-              window.open('https://abhyasa.graphy.com/courses', "_blank")
-            }}>Register Now</Button>
+          Exciting Opportunity: Step into our Hands-On Design Verification Projects – Build VLSI Expertise and Shape the Future of Tech!
+          <Link href={'/projects/design-verification'}>
+            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" >DV Projects</Button>
+            </Link>
           </span>
         </div>
       </div>

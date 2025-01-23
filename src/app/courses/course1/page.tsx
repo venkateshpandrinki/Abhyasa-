@@ -46,7 +46,7 @@ export default function Component() {
     "Receive Certification and Ongoing Technical Support"
   ].map((outcome, index) => (
                   <li key={index} className="flex items-center gap-2">
-                    <CheckCircle className="text-green-500" size={20} />
+                    <CheckCircle className="text-blue-600" size={20} />
                     <span>{outcome}</span>
                   </li>
                 ))}
@@ -90,7 +90,7 @@ export default function Component() {
           <h3 className="text-2xl font-semibold mb-4 text-center">Ready to Advance Your VLSI Skills?</h3>
           <p className="text-center mb-6 text-gray-300">Join our comprehensive VLSI Physical Design course and take your career to the next level.</p>
           <div className="flex justify-center">
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-6 rounded-full text-lg transition-colors duration-300"
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-lg transition-colors duration-300"
              onClick={() => window.open("https://abhyasa.graphy.com/courses/VLSI--Physical-Design--66e40e7870e1ab34d9f9933d-66e40e7870e1ab34d9f9933d", "_blank")}
             >
               Enroll Now

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 
 const Features: FC = ({}) => {
@@ -18,7 +18,7 @@ const Features: FC = ({}) => {
                 backgroundPosition: "center",
               }}
             >
-              <Image
+              <ExportedImage
                 src={"/images/ft/file.jpg"}
                 alt="mesh"
                 className="  rounded-full "
@@ -43,7 +43,7 @@ const Features: FC = ({}) => {
                 backgroundPosition: "center",
               }}
             >
-              <Image
+              <ExportedImage
                 src={"/images/ft/f2.jpg"}
                 alt="mesh"
                 className=" rounded-full  "
@@ -68,7 +68,7 @@ const Features: FC = ({}) => {
                 backgroundPosition: "center",
               }}
             >
-              <Image
+              <ExportedImage
                 src={"/images/ft/f33jpg.jpg"}
                 alt="mesh"
                 className="  rounded-full "

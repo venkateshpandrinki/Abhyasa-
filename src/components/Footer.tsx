@@ -9,6 +9,9 @@ import Link from "next/link";
 import TestimonialCarousel from "./testimonails";
 import { Separator } from "./ui/separator";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import Logo from "./Logo";
+
 
 export default function Footer() {
   return (
@@ -18,16 +21,19 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
 
             <div className="flex items-center ">
-            <Image
+            <Link href="/" className="  my-2">
+          {/* <ExportedImage
           src={"/images/smallLogo.png"}
           alt="logo"
-          width={60}
-          height={60}
-          />
-              <span className=" text-3xl font-serif text-red-500 font-medium">
-                {" "}
-                Abhyasa{" "}
-              </span>
+          width={70}
+          height={70}
+          /> */}
+           <Logo className='w-[70px] h-[70px]'/>
+        </Link>
+        <Link href="/" className="  text-center">
+          <p className="font-serif text-4xl  text-red-500 tracking-wide">ABHYASA</p>
+          <p className=" text-[14px]  font-medium text-blue-500">SEMICON TECHNOLOGIES</p>
+        </Link>
             </div>
             <p className="text-gray-300  mb-4 pl-4 max-w-s">
               Mastering VLSI Design for a Smarter Tomorrow
@@ -88,7 +94,7 @@ export default function Footer() {
         </div>
         <div className=" text-center   text-gray-400 text-sm lg:pr-8  mt-3 ">
           <Separator/>
-           <p className=" mt-3"> Copyright © 2024 Abhyasa Semicon Technologies.</p>
+           <p className=" mt-3"> Copyright © 2024 ABHYASA SEMICON TECHNOLOGIES.</p>
           </div>
       </div>
     </footer>

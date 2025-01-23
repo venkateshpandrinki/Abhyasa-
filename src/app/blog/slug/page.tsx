@@ -3,7 +3,7 @@ import { useParams } from "next/navigation"
 
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback,  } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback,  } from "@/components/ui/avatar" 
 import { Clock, User } from "lucide-react"
 
 import { blogPosts } from "@/lib/blogdata"

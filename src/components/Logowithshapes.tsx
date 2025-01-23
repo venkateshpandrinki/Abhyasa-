@@ -1,5 +1,7 @@
+import ExportedImage from 'next-image-export-optimizer';
 import Image from 'next/image';
 import Link from 'next/link';
+import Logo from './Logo';
 export default function Logowithshapes() {
   return (
     <div className="relative hidden  lg:flex items-center justify-center flex-wrap max-w-[278px]  h-[170px] z-50">
@@ -10,12 +12,13 @@ export default function Logowithshapes() {
         className="relative z-10 max-h-[175px]  ml-6 h-36   mt-[-15px]"
       /> */}
        <Link href="/" className="  my-2">
-          <Image
+          {/* <ExportedImage
           src={"/images/smallLogo.png"}
           alt="logo"
           width={90}
           height={90}
-          />
+          /> */}
+           <Logo className='w-[70px] h-[70px]'/>
         </Link>
         <Link href="/" className="  text-center">
           <p className="font-serif text-4xl  text-red-500 tracking-wide">ABHYASA</p>

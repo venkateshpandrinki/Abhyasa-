@@ -21,7 +21,7 @@ The primary challenge in nanometer design is handling the intricacies of device 
 
 Another critical factor is process variability, which intensifies as transistors shrink. Variations in manufacturing processes can lead to differences in the physical and electrical properties of components, even within the same chip. This variability complicates the predictability of performance and power consumption, creating additional hurdles for design accuracy. To mitigate this, designers rely on advanced simulation and statistical modeling to anticipate and account for potential variations, although these techniques add to the design complexity and time.
 `,
-      imageUrl: "https://images.pexels.com/photos/1432676/pexels-photo-1432676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      imageUrl: "/images/bl1.jpeg",
       author: "Dr. N. Patel",
       tags: ["VLSI", "Nanometer Design", "Scaling"],
       readTime: 8,
@@ -38,7 +38,7 @@ In this blog post, we’ll break down what makes FinFETs unique and why they’r
 We’ll also explore the challenges associated with FinFET implementation in VLSI, including design complexity, manufacturing considerations, and the specialized techniques engineers use to maximize FinFET efficiency. Finally, we’ll look at how FinFET technology has opened doors to more advanced transistor designs, driving innovation in IoT, AI, and other rapidly evolving fields.
 
 This post is ideal for anyone interested in understanding the latest advancements in VLSI and how FinFET technology is shaping the future of semiconductor design. Whether you’re an industry professional or a student, this blog offers a clear, in-depth look at the transformative impact of FinFET technology on modern electronics.`,
-      imageUrl: "https://spectrum.ieee.org/media-library/graphic.jpg?id=25591447&width=800&quality=85",
+      imageUrl: "images/bl2.webp",
       author: "Prof. L. Gupta",
       tags: ["VLSI", "FinFET", "Semiconductor"],
       readTime: 7,
@@ -46,8 +46,8 @@ This post is ideal for anyone interested in understanding the latest advancement
     },
     {
       id: 3,
-      title: "Physical Design Optimization in Sub-10nm Nodes",
-      excerpt: "Delve into physical design techniques used to address the unique challenges of sub-10nm nodes in VLSI.",
+      title: "FC(Fusion Compiler) to Innovus command mapping",
+      excerpt: " comparison of Fusion Compiler and Innovus commands",
       description: `As semiconductor technology continues to scale down, physical design optimization at sub-10nm nodes has become one of the most complex and challenging aspects of Very Large-Scale Integration (VLSI). At this scale, transistors are incredibly small—less than one-thousandth the width of a human hair—posing unique obstacles related to performance, power consumption, and manufacturing precision. Let’s look into what makes physical design at sub-10nm nodes so complex, and the strategies used to achieve efficient, reliable designs at this scale.
 
 Key Challenges in Sub-10nm Physical Design
@@ -58,11 +58,11 @@ Power Leakage and Thermal Management: Smaller transistors are more susceptible t
 Signal Integrity and Electromagnetic Interference: As transistors become smaller and signals travel closer together, issues such as cross-talk (unwanted interference between signals) and electromagnetic interference (EMI) become more common. These issues can degrade signal quality, impacting the performance and reliability of the circuit. To combat this, designers must optimize wire routing, use shielding techniques, and carefully plan the placement of components to minimize interference.
 
 Design Complexity and Tool Limitations: Traditional design tools face significant limitations at sub-10nm scales, where new phenomena such as quantum effects and extreme parasitic capacitances (unintended resistance and capacitance in a circuit) play a more prominent role. Physical design at this level requires new, highly specialized Electronic Design Automation (EDA) tools that incorporate machine learning and AI to handle increased complexity and optimize placement and routing with greater accuracy.`,
-      imageUrl: "https://chipedge.com/wp-content/uploads/2023/05/close-up-computer-circuit-board-with-neon-lights-generative-ai-1-1024x693.jpg",
-      author: "Dr. R. Mehta",
+      imageUrl: "images/bl3.jpg",
+      author: " ",
       tags: ["VLSI", "Physical Design", "Nanotechnology"],
       readTime: 9,
-      slug: "physical-design-optimization"
+      slug: "fc-to-innovus-command-mapping"
     }
   ]
   

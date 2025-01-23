@@ -2,6 +2,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import {  Info } from "lucide-react"
 
 import Marquee from "@/components/ui/marquee";
+import ExportedImage from "next-image-export-optimizer";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 const logos = [
@@ -83,7 +84,7 @@ export default function page() {
           className="sm:h-20 md:h-24 justify-center overflow-hidden [--duration:30s] [--gap:1rem]"
           >
           {logos.map((data, idx) => (
-            <img
+            <ExportedImage
               key={idx}
               src={data.image}
               alt={data.alt}
@@ -98,7 +99,7 @@ export default function page() {
           className=" sm:h-20 md:h-24 justify-center overflow-hidden [--duration:30s] [--gap:1rem]"
         >
           {logos.map((data, idx) => (
-            <img
+            <ExportedImage
             key={idx}
             src={data.image}
             alt={data.alt}
@@ -119,7 +120,7 @@ export default function page() {
               <Card key={index} className="bg-cyan-50/5 border-cyan-200/20 backdrop-blur-sm hover:bg-cyan-50/10 transition-colors">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="relative w-24 h-24 mb-4">
-                    <Image
+                    <ExportedImage
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="rounded-full object-cover"

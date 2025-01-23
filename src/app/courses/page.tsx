@@ -29,6 +29,14 @@ const page = () => {
     {
       question: "What if I need help during the course?",
       answer: "We offer support through discussion forums within each course. For ABHYASA Meetings, you can interact directly with instructors and peers. Additionally, you can reach out to our support team for any technical issues."
+    },
+    {
+      question:"What are the different kinds of jobs in VLSI physical design ?",
+      answer:"1) Synthesis and STA 2) Floorplan 3) PnR 4)Physical Verification 5) Formal Verification, Functionality Verification, CAD, SI/PI",
+    },{
+      question:"Can fresher easily get a job in VLSI PD ?",
+      answer:`Ofcourse , with the right skill set its quiet easy . Its best to get into a MNC while you are in college (internship)
+Worst case keep yourself well equipped with digital electronics , cmos vlsi and some scripting concepts . Also , try to connect with vlsi professionals in Linkedin.`
     }
   ]
   return (
@@ -60,7 +68,7 @@ const page = () => {
             </CardContent>
           </Card>
 
-          {/* FAQ Section */}
+          {/*  Section */}
           <Card className="bg-gray-800 border-gray-700">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-white">Frequently Asked Questions</CardTitle>

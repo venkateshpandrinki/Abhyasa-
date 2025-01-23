@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, User } from "lucide-react"
 import Link from "next/link"
 import {blogPosts} from '../lib/blogdata'
+import ExportedImage from "next-image-export-optimizer"
 
 
 export default function Blog() {
@@ -15,7 +16,7 @@ export default function Blog() {
           {blogPosts.map((post) => (
             <Card key={post.id} className="bg-gray-800 text-white border-gray-700 flex flex-col">
               <CardHeader className="p-0">
-                <img
+                <ExportedImage
                   src={post.imageUrl}
                   alt={post.title}
                   width={300}

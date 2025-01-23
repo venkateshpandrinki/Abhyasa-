@@ -59,7 +59,7 @@ export default function Page() {
   };
 
   return (
-    <div className="h-5/6 bg-gradient-to-br from-black via-gray-900 to-gray-800 p-4 md:p-8">
+    <div className=" md:h-5/6 bg-gradient-to-br from-black via-gray-900 to-gray-800 p-4 md:p-8 ">
       <Navbar />
       <h1 className="text-5xl md:text-7xl font-bold text-center my-4 text-white">Contact us</h1>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
