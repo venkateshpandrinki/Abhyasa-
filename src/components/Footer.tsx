@@ -94,7 +94,8 @@ export default function Footer() {
         </div>
         <div className=" text-center   text-gray-400 text-sm lg:pr-8  mt-3 ">
           <Separator/>
-           <p className=" mt-3"> Copyright © 2024 ABHYASA SEMICON TECHNOLOGIES.</p>
+           <p className=" mt-3"> Copyright © 2025 ABHYASA SEMICON TECHNOLOGIES.</p>
+           <p> Developed by <Link href="https://github.com/venkateshpandrinki" target="_blank" className=" underline">Venkatesh</Link></p>
           </div>
       </div>
     </footer>

@@ -10,15 +10,16 @@ const ScrollingBanner = () => {
       <div className="scrolling-container">
         <div className="scrolling-content">
           <span className="inline-flex items-center text-xl">
-          Exciting Opportunity: Step into our Hands-On Physical Design Projects – Build VLSI Expertise and Shape the Future of Tech!
-          <Link href={'/projects/physical-design'}>
-            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" >PD Projects</Button>
+          Comprehensive Industry-Oriented VLSI Design Training for II-year ECE, EEE & EIE Students (300 Hours Across 4 Semesters)
+          <Link href={"https://drive.google.com/file/d/15yLJwm7gGqYvg4pkrA5cb6_nRlFzN7aa/view?usp=sharing"} target='_blank'>
+            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" >Join the Program</Button>
             </Link>
           </span>
           <span className="inline-flex items-center text-xl ml-20">
-          Exciting Opportunity: Step into our Hands-On Design Verification Projects – Build VLSI Expertise and Shape the Future of Tech!
-          <Link href={'/projects/design-verification'}>
-            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" >DV Projects</Button>
+          Comprehensive Industry-Oriented VLSI Design Training for II-year ECE, EEE & EIE Students (300 Hours Across 4 Semesters)
+          <Link href={"https://drive.google.com/file/d/15yLJwm7gGqYvg4pkrA5cb6_nRlFzN7aa/view?usp=sharing"} target='_blank'>
+          
+            <Button className="ml-4 bg-blue-600 hover:bg-blue-700" >Join the Program</Button>
             </Link>
           </span>
         </div>
