@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
   <>
-         {/* <SideNavBar/> */}
+         {/* <SideNavBar/>  */}
     <CourseAnnouncementModal/>
     <ImagePopup altText="banner" imageUrl="/images/flyer1.jpg" linkUrl="https://drive.google.com/file/d/15yLJwm7gGqYvg4pkrA5cb6_nRlFzN7aa/view?usp=sharing"/>
     <div className=" scroll-smooth  bg-gradient-to-br from-black via-gray-900 to-gray-800  ">
@@ -138,9 +138,9 @@ export default function Home() {
           
 
     <div className="flex md:justify-center  md:gap-16 h-auto justify-center  gap-5 mt-2 w-full  ">
-      <div>
+      <div className=" ">
 
-        <Button className=" bg-blue-600 " >Physical Design</Button>
+        <Button className=" bg-blue-600 text text-base py-5   hover:bg-blue-700 " >Physical Design</Button>
       </div>
         {/* <div>
 
@@ -156,7 +156,7 @@ export default function Home() {
         <Button >PD Essentials</Button>
         </Link> */}
 <DropdownMenu >
-          <DropdownMenuTrigger className=" flex items-center bg-blue-600  rounded-md border-none p-2">
+          <DropdownMenuTrigger className=" flex items-center  text-base bg-blue-600  rounded-md border-none p-2">
             PD Essentials{" "}
             <span>
               <ChevronDown className=" mt-1" />
@@ -171,6 +171,11 @@ export default function Home() {
                 Trim-Design
               </Link>
             </DropdownMenuItem>
+            <DropdownMenuItem className=" my-2 focus:bg-blue-800 text-lg font-bold ">
+              <Link href={"/blog/pnr/module-placement-constraints"}>
+                Module Placement constraints
+              </Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
         
@@ -183,7 +188,7 @@ export default function Home() {
       <Features />
       <Courses />
 
-      {/* <Placements /> */}
+      <Placements />
       <div ref={enrollmentRef}>
 
       <Enrollment />
