@@ -5,6 +5,11 @@ import Marquee from "@/components/ui/marquee";
 import ExportedImage from "next-image-export-optimizer";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import { Metadata } from 'next'
+export const metadata:Metadata ={
+ title:'VLSI Placement Training with 100% Support – Abhyasa Success Stories',
+ description:'See how Abhyasa students secure core semiconductor jobs with industry-relevant VLSI training. Our placement assistance covers resume building, mock interviews & hiring from MNCs and startups.'
+}
 const logos = [
   { "image": "/images/comp/c1.jpg", "alt": "Logo 1" },
   { "image": "/images/comp/c2.jpg", "alt": "Logo 2" },
@@ -12,7 +17,7 @@ const logos = [
   { "image": "/images/comp/c4.jpg", "alt": "Logo 4" },
   { "image": "/images/comp/c5.png", "alt": "Logo 5" },
   { "image": "/images/comp/c6.png", "alt": "Logo 6" },
-  { "image": "/images/comp/c7 .jpg", "alt": "Logo 7" },
+  { "image": "/images/comp/c7.jpg", "alt": "Logo 7" },
   { "image": "/images/comp/c8.png", "alt": "Logo 8" },
   { "image": "/images/comp/c9.jpg", "alt": "Logo 9" },
   { "image": "/images/comp/c10.png", "alt": "Logo 10" },
@@ -146,12 +151,12 @@ const testimonials = [
     {
       name: "S.Chandrasekhar",
       company: "Wipro",
-      image: "/images/alumni/s_chandrasekhar.png"
+      image: "/images/alumni/ch.jpg"
     },
     {
       name: "I. Naga Rajesh",
       company: "Digicomm",
-      image: "/images/alumni/naga_rajesh.png"
+      image: "/images/alumni/nagarajesh.jpg"
     },
     {
       name: "M. Emmanuel",
@@ -166,11 +171,11 @@ const testimonials = [
     {
       name: "K.Rahul",
       company: "Chipsolvetech",
-      image: "/images/alumni/rahul.png"
+      image: "/images/alumni/rahul.jpg"
     },
     {
       name: "A.Animesh",
       company: "Omni Arch Semiconductors",
-      image: "/images/alumni/animesh.png"
+      image: "/images/alumni/animesh.jpg"
     }
   ]

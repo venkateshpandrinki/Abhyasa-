@@ -64,5 +64,28 @@ Design Complexity and Tool Limitations: Traditional design tools face significan
       readTime: 9,
       slug: "fc-to-innovus-command-mapping"
     }
+    ,{
+       id: 4,
+    title: "5 High-Demand Careers in the Semiconductor Industry and How to Get There",
+    excerpt: `Explore the top 5 high-demand careers in the semiconductor industry, including chip design, verification, and fabrication. Learn how to get started with practical skills and industry-ready training.
+`,
+    description: "",
+    imageUrl: "/images/blog/blog4.jpg",
+    author: "",
+    tags: [],
+    readTime: 4,
+    slug: "5-high-demand-careers-in-the-semiconductor-industry-and-how-to-get-there"
+    }
+    ,{
+       id: 5,
+    title: "How the Semiconductor Industry is Evolving for Students",
+    excerpt: `Explore how the semiconductor industry is changing and what engineering students must learn to build a successful career in chip design and VLSI.`,
+    description: "",
+    imageUrl: "images/blog/blog5.jpg",
+    author: "",
+    tags: [],
+    readTime: 4,
+    slug: "how-the-semiconductor-industry-is-evolving-for-students"
+    }
   ]
   

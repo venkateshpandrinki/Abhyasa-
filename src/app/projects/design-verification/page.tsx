@@ -6,6 +6,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Metadata } from 'next'
+export const metadata:Metadata ={
+ title:'VLSI Design Verification Projects – UVM, SystemVerilog & Simulation Training',
+ description:'Work on advanced ASIC and FPGA verification projects using UVM, SystemVerilog, and real-world verification flows. Perfect for VLSI students and engineers preparing for core roles.'
+}
 
 export default function ProjectListing() {
   return (

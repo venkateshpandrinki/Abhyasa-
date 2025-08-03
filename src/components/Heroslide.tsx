@@ -20,7 +20,7 @@ type HeroSlideProps = {
 const Heroslide = ({ scrollToEnrollment }: HeroSlideProps) => {
   return (
     <>
-    <motion.div initial="hidden" animate="show" variants={fadeInUpAnimation}
+    {/* <motion.div initial="hidden" animate="show" variants={fadeInUpAnimation}
     className="hidden  md:flex flex-col justify-center items-center text-center lg:mt-8 gap-4 mb-10"
     >
       <motion.h1 variants={fadeInUpAnimation} className={` ${hedvig.className} font-black leading-10   
@@ -46,11 +46,11 @@ const Heroslide = ({ scrollToEnrollment }: HeroSlideProps) => {
       </motion.div>
 
       
-    </motion.div>
+    </motion.div> */}
     
    
     <div 
-    className=" md:hidden flex flex-col justify-center items-center text-center lg:mt-8 gap-4"
+    className="  flex flex-col justify-center items-center text-center lg:mt-8 gap-4"
     >
       <h1 className={` ${hedvig.className} font-black leading-10   
       text-4xl 

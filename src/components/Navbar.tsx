@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={`${GeistSans.className} w-full`}>
       <header className="flex h-16 w-full shrink-0  items-center px-4 md:px-6">
-        <Link href="/" className="  my-2">
+        <Link href="/" className="  my-2" aria-label="Home">
           {/* <ExportedImage
             src={"/images/smallLogo.png"}
             alt="logo"

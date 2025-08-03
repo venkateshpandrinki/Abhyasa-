@@ -46,7 +46,7 @@ export function Courses() {
             className="w-full h-48 object-cover"
           />
           <CardHeader>
-            <CardTitle className="text-xl font-bold text-white">{course.title}</CardTitle>
+            <CardTitle className="text-2xl font-bold text-white">{course.title}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-gray-400">Learn with ABHYASA</p>

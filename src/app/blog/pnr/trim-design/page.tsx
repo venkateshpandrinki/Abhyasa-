@@ -21,7 +21,7 @@ const page = () => {
         <div className="min-h-screen text-white flex items-center justify-center p-4">
           <Card className="w-full max-w-4xl bg-gray-800 bg-opacity-50 border-none">
             <CardHeader>
-              <CardTitle className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <CardTitle level="h1" className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight tracking-tight">
                 Trimming a Design in Innovus (trimDesign)
               </CardTitle>
               <CardDescription>

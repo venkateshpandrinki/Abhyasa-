@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import FloatingNav from "@/components/FloatingNav";
-import { ChevronDown, Mail, Phone } from "lucide-react";
+import { ChevronDown, LucideYoutube, Mail, Phone, Youtube, YoutubeIcon } from "lucide-react";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
@@ -21,18 +21,25 @@ import Navbar from "@/components/Navbar";
 import { useRef } from "react";
 import Link from "next/link";
 import Blog from "@/components/Blog";
-import ExportedImage from "next-image-export-optimizer";
-import SideNavBar from "@/components/SideNavBar";
-import { Button } from "@/components/ui/button";
-import CourseAnnouncementModal from "@/components/CourseAnnouncementModal";
-import ImagePopup from "@/components/ImagePopup";
+import type { Metadata } from 'next';
 import { DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 // const images = ["https://media.licdn.com/dms/image/v2/D5612AQH8MT2TEr39zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1679751126970?e=1736380800&v=beta&t=SK2GrZN0wUy7vXnShVgRVSsFXDQ1JS0uRUc21jDlJF4","https://pinetrainingacademy.in/wp-content/uploads/2023/07/Untitled-design-18-e1690568162755.jpg","https://openroaddesigncontest.org/wp-content/uploads/2023/02/99.jpg"];
-const images = ['/images/b1.jpg','/images/b2.jpg','/images/b3.jpg'];
+const images = ['/images/b1.webp','/images/b2.webp','/images/b3.webp'];
 // const images = ['/images/b2.WEBP','/images/b1.WEBP','images/b3.WEBP'];
+
+
+
+
+
+
+
+
+
+
+
 
 export default function Home() {
   const enrollmentRef = useRef<HTMLDivElement | null>(null); // Define the type for the ref
@@ -58,8 +65,8 @@ export default function Home() {
   return (
   <>
          {/* <SideNavBar/>  */}
-    <CourseAnnouncementModal/>
-    <ImagePopup altText="banner" imageUrl="/images/flyer1.jpg" linkUrl="https://drive.google.com/file/d/15yLJwm7gGqYvg4pkrA5cb6_nRlFzN7aa/view?usp=sharing"/>
+    {/* <CourseAnnouncementModal/> */}
+    {/* <ImagePopup altText="banner" imageUrl="/images/flyer1.jpg" linkUrl="https://drive.google.com/file/d/15yLJwm7gGqYvg4pkrA5cb6_nRlFzN7aa/view?usp=sharing"/> */}
     <div className=" scroll-smooth  bg-gradient-to-br from-black via-gray-900 to-gray-800  ">
 
       {/* /contactdetails */}
@@ -80,16 +87,19 @@ export default function Home() {
           </address>
         </div>
         <Separator className=" bg-slate-400 h-8" orientation="vertical" />
-        <div className=" cursor-pointer flex space-x-4">
-          <Link href={"https://www.linkedin.com/in/abhyasasemitech24/"} target="_blank">
-          <LinkedInLogoIcon />
-          </Link>
-          <Link href={"https://www.instagram.com/abhyasa_semitech/"} target="_blank">
-          <InstagramLogoIcon />
-          </Link>
-          <Link href={"https://x.com/abhyasasemitech"} target="_blank">
-          <TwitterLogoIcon />
-          </Link>
+        <div className=" cursor-pointer flex items-center space-x-4">
+            <Link href={"https://www.linkedin.com/in/abhyasasemitech24/"} target="_blank" aria-label="LinkedIn">
+            <LinkedInLogoIcon />
+            </Link>
+            <Link href={"https://www.instagram.com/abhyasa_semitech/"} target="_blank" aria-label="Instagram">
+            <InstagramLogoIcon />
+            </Link>
+            <Link href={"https://x.com/abhyasasemitech"} target="_blank" aria-label="Twitter">
+            <TwitterLogoIcon />
+            </Link>
+            <Link href={"https://www.youtube.com/@abhyasa_semitech"} target="_blank" aria-label="Youtube">
+            <LucideYoutube className="h-6 w-6" strokeWidth={1} />
+            </Link>
         </div>
       </div>
       <div className=" absolute ">
@@ -140,7 +150,20 @@ export default function Home() {
     <div className="flex md:justify-center  md:gap-16 h-auto justify-center  gap-5 mt-2 w-full  ">
       <div className=" ">
 
-        <Button className=" bg-blue-600 text text-base py-5   hover:bg-blue-700 " >Physical Design</Button>
+      <DropdownMenu >
+          <DropdownMenuTrigger className=" flex items-center  text-base bg-blue-600  rounded-md border-none p-2">
+            Physical Design{" "}
+            <span>
+              <ChevronDown className=" mt-1" />
+            </span>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className=" bg-blue-600  rounded-2xl border-none ">
+            <DropdownMenuItem className="   focus:bg-blue-800 my-2 text-lg font-bold ">
+              <Link href={"/blog/pnr/floorplanning-the-design"}> Floorplanning the design</Link>
+            </DropdownMenuItem>
+            
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
         {/* <div>
 
@@ -184,11 +207,11 @@ export default function Home() {
   
         </div>
       </div>
-      <ScrollingBanner />
+      {/* <ScrollingBanner /> */}
       <Features />
       <Courses />
 
-      <Placements />
+      {/* <Placements /> */}
       <div ref={enrollmentRef}>
 
       <Enrollment />

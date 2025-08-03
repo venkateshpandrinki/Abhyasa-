@@ -11,7 +11,7 @@ export default function Logowithshapes() {
         alt="Logo"
         className="relative z-10 max-h-[175px]  ml-6 h-36   mt-[-15px]"
       /> */}
-       <Link href="/" className="  my-2">
+       <Link href="/" className="  my-2" aria-label='Home'>
           {/* <ExportedImage
           src={"/images/smallLogo.png"}
           alt="logo"
@@ -20,7 +20,7 @@ export default function Logowithshapes() {
           /> */}
            <Logo className='w-[70px] h-[70px]'/>
         </Link>
-        <Link href="/" className="  text-center">
+        <Link href="/" className="  text-center" aria-label='Home'>
           <p className="font-serif text-4xl  text-red-500 tracking-wide">ABHYASA</p>
           <p className=" text-[14px]  font-medium text-blue-500">SEMICON TECHNOLOGIES</p>
         </Link>

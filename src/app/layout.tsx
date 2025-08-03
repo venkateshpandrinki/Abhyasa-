@@ -8,16 +8,18 @@ import StickyNav from "@/components/StickyNav";
 import Footer from "@/components/Footer";
  
 
-export const metadata: Metadata = {
-  title: "Abhyasa",
-  description: "",
-};
+export const metadata:Metadata={
+  title:'Kickstart Your VLSI Career in Telangana, Andhra & Bangalore – Industry-Ready Training with Placement Support'
+  ,
+  description:'Abhyasa offers hands-on VLSI training programs across Telangana, Andhra Pradesh, and Bangalore. Learn from experts, master industry tools, and get job-ready with 100% placement assistance. Ideal for students, passouts & working professionals.'
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+        // console.log("👶 children type:", typeof children, children);
   return (
     <html lang="en">
       <body
@@ -30,10 +32,13 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+
+          
             {children}
           </ThemeProvider>
           <Footer/>
       </body>
+      
     </html>
   );
 }

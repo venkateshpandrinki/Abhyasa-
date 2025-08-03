@@ -18,7 +18,7 @@ const page = () => {
         <div className="min-h-screen text-white flex items-center justify-center p-4">
           <Card className="w-full max-w-4xl bg-gray-800 bg-opacity-50 border-none">
             <CardHeader>
-              <CardTitle className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight tracking-tight">Latch-Up in CMOS/BiCMOS Circuits: Causes, Impact, and Prevention</CardTitle>
+              <CardTitle level="h1" className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight tracking-tight">Latch-Up in CMOS/BiCMOS Circuits: Causes, Impact, and Prevention</CardTitle>
               <CardDescription>Understanding and mitigating latch-up in CMOS/BiCMOS circuits is crucial for reliable circuit design.</CardDescription>
             </CardHeader>
             <CardContent>

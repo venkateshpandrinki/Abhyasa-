@@ -7,7 +7,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
+import { Metadata } from 'next'
+export const metadata:Metadata ={
+ title:'VLSI Physical Design Projects – Learn STA, PnR & Layout with Cadence Tools',
+ description:'Gain practical experience with physical design projects covering clock tree synthesis, place & route, STA, and signoff using industry-standard EDA tools. Built for hands-on VLSI training across South India.'
+}
 export default function ProjectListing() {
   return (
     <div className="min-h-[80vh] bg-gradient-to-br from-black via-gray-900 to-gray-800 text-gray-100">

@@ -9,7 +9,7 @@ const logos = [
   { "image": "/images/comp/c4.jpg", "alt": "Logo 4" },
   { "image": "/images/comp/c5.png", "alt": "Logo 5" },
   { "image": "/images/comp/c6.png", "alt": "Logo 6" },
-  { "image": "/images/comp/c7 .jpg", "alt": "Logo 7" },
+  // { "image": "/images/comp/c7 .jpg", "alt": "Logo 7" },
   { "image": "/images/comp/c8.png", "alt": "Logo 8" },
   { "image": "/images/comp/c9.jpg", "alt": "Logo 9" },
   { "image": "/images/comp/c10.png", "alt": "Logo 10" },
@@ -44,6 +44,7 @@ export function Placements() {
               src={data.image}
               alt={data.alt}
               style={{ aspectRatio: "16/9" }}
+              loading="lazy"
               className="mx-auto md:h-20  md:w-auto  h-16 w-auto cursor-pointer rounded-xl  transition-all duration-300 hover hover:shadow-white shadow-md"
             />
           ))}
@@ -59,6 +60,7 @@ export function Placements() {
               src={data.image}
               alt={data.alt}
               style={{ aspectRatio: "16/9" }}
+              loading="lazy"
               className="mx-auto  md:h-20  md:w-auto  h-16 w-auto cursor-pointer rounded-xl  transition-all duration-300 hover hover:shadow-white shadow-md"
             />
           ))}

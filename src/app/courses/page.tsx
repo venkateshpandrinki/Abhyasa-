@@ -11,6 +11,11 @@ import {
 } from "@/components/ui/accordion"
 import { Mail, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { Metadata } from 'next'
+export const metadata:Metadata ={
+ title:'VLSI Courses in Hyderabad, Bangalore & AP – Physical Design, Verification, RTL',
+ description:'Explore industry-oriented VLSI design and verification courses by Abhyasa. Learn RTL coding, ASIC verification, and physical design tools like Cadence. Ideal for students, graduates, and professionals.'
+}
 
 const page = () => {
   const faqs = [
